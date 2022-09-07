@@ -1,0 +1,64 @@
+/** @format */
+body {
+	margin: 0;
+}
+.App {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffbb73;
+}
+.button {
+	width: 300px;
+	height: 150px;
+	border-radius: 5px;
+	border: 1px #000 solid;
+	font-size: 25px;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-color: #fff;
+}
+.animation {
+	width: 300px;
+	height: 300px;
+	border-radius: 5px;
+	animation: loader 0.6s ease-in-out;
+	background-color: #fff;
+	pointer-events: none;
+}
+.blockViget {
+	width: 500px;
+	height: 500px;
+	border-radius: 5px;
+	animation: viget 1s ease-in-out;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.blockViget span {
+	font-weight: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+@keyframes loader {
+	0% {
+		height: 150px;
+	}
+	50% {
+		height: 300px;
+	}
+}
+@keyframes viget {
+	0% {
+		height: 300px;
+		width: 300px;
+	}
+	50% {
+		height: 500px;
+		width: 500px;
+	}
+}
